@@ -5,6 +5,7 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <h1>추가된 제목</h1>
     <App />
   </StrictMode>,
 )
