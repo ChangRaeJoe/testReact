@@ -9,7 +9,7 @@ import { Sub2 } from "./Sub2.tsx";
 import { Sub3 } from "./Sub3.tsx";
 import { Sub4 } from "./Sub4.tsx";
 
-const pathNames = ["/", "/sub1", "/sub2", "/sub3"];
+const pathNames = ["/", "/sub1", "/sub2", "/sub3", "/sub4"];
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

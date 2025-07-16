@@ -100,7 +100,7 @@ export function Sub1() {
         <input type="submit" value="추가" />
       </form>
       <div className="list">
-        {items.entries().map(([k, v]) => {
+        {Array(...items).map(([k, v]) => {
           // return <div key={k}>{v.text}</div>;
           return (
             <Item key={k} itemId={k} text={v.text} onDelete={handleDelete}>

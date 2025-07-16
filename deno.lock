@@ -6,6 +6,8 @@
     "npm:@types/react-dom@^19.1.2": "19.1.6_@types+react@19.1.7",
     "npm:@types/react@^19.1.2": "19.1.7",
     "npm:@vitejs/plugin-react-swc@^3.9.0": "3.10.2_vite@6.3.5__picomatch@4.0.2_@types+node@22.15.15",
+    "npm:@xterm/addon-fit@0.10": "0.10.0_@xterm+xterm@5.5.0",
+    "npm:@xterm/xterm@^5.5.0": "5.5.0",
     "npm:eslint-plugin-react-hooks@^5.2.0": "5.2.0_eslint@9.28.0",
     "npm:eslint-plugin-react-refresh@~0.4.19": "0.4.20_eslint@9.28.0",
     "npm:eslint@^9.25.0": "9.28.0",
@@ -556,6 +558,15 @@
         "@swc/core",
         "vite@6.3.5_picomatch@4.0.2_@types+node@22.15.15"
       ]
+    },
+    "@xterm/addon-fit@0.10.0_@xterm+xterm@5.5.0": {
+      "integrity": "sha512-UFYkDm4HUahf2lnEyHvio51TNGiLK66mqP2JoATy7hRZeXaGMRDr00JiSF7m63vR5WKATF605yEggJKsw0JpMQ==",
+      "dependencies": [
+        "@xterm/xterm"
+      ]
+    },
+    "@xterm/xterm@5.5.0": {
+      "integrity": "sha512-hqJHYaQb5OptNunnyAnkHyM8aCjZ1MEIDTQu1iIbbTD/xops91NB5yq1ZK/dC2JDbVWtF23zUtl9JE2NqwT87A=="
     },
     "acorn-jsx@5.3.2_acorn@8.15.0": {
       "integrity": "sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==",
@@ -1231,6 +1242,8 @@
         "npm:@types/react-dom@^19.1.2",
         "npm:@types/react@^19.1.2",
         "npm:@vitejs/plugin-react-swc@^3.9.0",
+        "npm:@xterm/addon-fit@0.10",
+        "npm:@xterm/xterm@^5.5.0",
         "npm:eslint-plugin-react-hooks@^5.2.0",
         "npm:eslint-plugin-react-refresh@~0.4.19",
         "npm:eslint@^9.25.0",
