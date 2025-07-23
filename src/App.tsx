@@ -16,6 +16,7 @@ export function App() {
   useEffect(() => {
     isInValidVersion(curVersion).then((result: boolean) => {
       // alert(result ? "equal" : "diff"); //true: equal version
+      console.log(result);
     });
 
     return () => {
