@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.btnGroup {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.badgeGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4px;
+  margin-top: 16px;
+}

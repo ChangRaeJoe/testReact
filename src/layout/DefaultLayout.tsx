@@ -1,4 +1,4 @@
-import { Link, Outlet, useLocation } from "react-router";
+import { Link, Outlet, useLocation, useNavigate } from "react-router";
 import { type CSSProperties } from "react";
 
 const style: CSSProperties = {
@@ -20,6 +20,8 @@ const flexBtnStyle: CSSProperties = {
 
 export function DefaultLayout({ pathNames }: { pathNames: string[] }) {
   const location = useLocation();
+  const navigation = useNavigate();
+
   const pathIndex = pathNames.findIndex((path) => {
     return location.pathname == path;
   });
@@ -29,9 +31,14 @@ export function DefaultLayout({ pathNames }: { pathNames: string[] }) {
   const nextPath = (pathIndex + 1) < pathNames.length
     ? pathNames[pathIndex + 1]
     : pathNames[pathNames.length];
+
+  const handleLogoClick = function () {
+    navigation("/");
+  };
+
   return (
     <>
-      <h1>Main</h1>
+      <button onClick={handleLogoClick}>logo</button>
       <div style={style}>
         <Outlet></Outlet>
       </div>

@@ -9,7 +9,7 @@ export function Sub4() {
   useEffect(() => {
     if (boxRef.current == null) return;
 
-    const terminal = new Terminal();
+    const terminal = new Terminal({});
     const fitAddon = new FitAddon();
     terminal.loadAddon(fitAddon);
 
